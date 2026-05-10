@@ -17,6 +17,15 @@ Output:
 
 Map = (3,4,2,6,3)
 
+
+The relationship between the number of restriction cuts `k` and the number of elements in the multiset `A` can be described by the formula:
+
+```math
+|A| = \binom{k+2}{2}
+```
+<br/><br/>
+Assuming there are no errors in the input data, the computational complexity of this problem remains an open question.
+
 >[!NOTE]
 >Currently, the input file is hardcoded, however it will be made possible for user to chose the desired file.
 
