@@ -10,8 +10,12 @@ typedef pair<int, bool> Element;
 vector<int> map;
 
 vector<Element> load_from_file() {
-  
-    ifstream file("data/1-5a-asc.txt");
+    string namefile;
+
+    cout << "Choose a file, from data directory (full name)" << endl;
+    cin >> namefile;
+
+    ifstream file("data/" + namefile);
     
     vector<Element> set;
     int number;
