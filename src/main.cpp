@@ -26,7 +26,7 @@ vector<Element> load_from_file() {
         }
     }
     else {
-        cout << "Nie znaleziono pliku!" << endl;
+        cout << "File not found!" << endl;
         exit(1);
     }
     return set;
@@ -94,7 +94,7 @@ void un_use_element(vector<Element>& set, int x) {
 
 void szukaj(int ind, int maxind, int& jest, int n, vector<Element>& set, vector<int>& map , chrono::steady_clock::time_point start) {
     if (ind == maxind) {
-        cout << "Rozwiazanie mapy: ";
+        cout << "Solution: ";
         for (int i : map) {
             cout <<"|-"<< i << "-|";
         }
@@ -164,18 +164,18 @@ int main() {
     int jest;
 
     if (cuts == 0) {
-        cout << "Nie istnieje liczba cięc dla tej instancji." << endl;
+        cout << "There is no number of cuts for this instance." << endl;
         exit(2);
     }
     else {
         map.push_back(first);
         if (!can_be_used(set, map[0])) {
-            cout << "Błąd.Pierwszy element nie zawiera się w zbiorze." << endl;
+            cout << "Error. The first element is not contained in the set." << endl;
             cout << last << "|" << second_last;
             exit(3);
         }
         if (!can_be_used(set, last) || !can_be_used(set, second_last)) {
-            cout << "Błąd" << endl;
+            cout << "Error" << endl;
             exit(3);
         }
         use_element(set, map[0]);
@@ -187,10 +187,10 @@ int main() {
         auto end = std::chrono::steady_clock::now();
         chrono::duration<double> time = end - start;
 
-         cout << "Czas dzialania algorytmu " << time.count() << " sekund." << endl;
+         cout << "Algorithm runtime " << time.count() << " s." << endl;
       
         if (jest == 0) {
-            cout << "Mapa dla podanego multizbioru nie istnieje." << endl;
+            cout << "The map for the given multiset does not exist." << endl;
             exit(4);
         }
     }
