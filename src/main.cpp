@@ -11,7 +11,7 @@ vector<int> map;
 
 vector<Element> load_from_file() {
   
-    ifstream file("1-5a-asc.txt");
+    ifstream file("data/1-5a-asc.txt");
     
     vector<Element> set;
     int number;
