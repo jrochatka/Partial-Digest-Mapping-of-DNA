@@ -26,6 +26,23 @@ The relationship between the number of restriction cuts `k` and the number of el
 <br/><br/>
 Assuming there are no errors in the input data, the computational complexity of this problem remains an open question.
 
+### Data
+
+Instances are labeled using the following format:
+
+`[instance_id]-[k]a-[asc/desc]`
+
+where:
+
+- **`instance_id`** – identifier of the dataset variant (different test cases generated from different input sets),
+- **`k`** – number of places of digestion, 
+- **`a`** – generation variant identifier (fixed type of input generator used for all instances in this set),
+- **`asc / desc`** – ordering of the input multiset:
+  - **`asc`** – values sorted in ascending order,
+  - **`desc`** – values sorted in descending order.
+
+This naming scheme allows systematic comparison of algorithm performance across different problem sizes and input orderings while keeping the underlying instance structure consistent.
+
 ## Usage
 
 To build and run the program, simply type:
