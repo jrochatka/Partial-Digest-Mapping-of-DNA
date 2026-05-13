@@ -26,12 +26,9 @@ The relationship between the number of restriction cuts `k` and the number of el
 <br/><br/>
 Assuming there are no errors in the input data, the computational complexity of this problem remains an open question.
 
->[!NOTE]
->Currently, the input file is hardcoded, however it will be made possible for user to chose the desired file.
-
 ## Usage
 
 ```bash
-c++ 'AKwB 4.cpp' -o ./a.out
-./a.out
+c++ 'main.cpp' -o ./pdm.out
+./pdm.out
 ```
