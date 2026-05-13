@@ -28,7 +28,7 @@ Assuming there are no errors in the input data, the computational complexity of 
 
 ## Usage
 
+To build and run the program, simply type:
 ```bash
-c++ 'main.cpp' -o ./pdm.out
-./pdm.out
+make
 ```
